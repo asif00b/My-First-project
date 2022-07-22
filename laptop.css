@@ -50,6 +50,7 @@
         'c c c a1'
         ;
     }
+
     .content{
         height: 100%;
     }
@@ -63,7 +64,26 @@
     .content img:hover{
         transform: scale(1.1);
     }
+    #masking{
+        display: block;
+        float: right;
+        margin: 5px;
+        width: 400px;
+        height: 440px;
+
+        -webkit-mask-image: url(images/logo.png);
+        mask-image: url(images/logo.png);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat; 
+
+
+    }
+    #masking:hover{
+        transition: 3s;
+        transform: scale(.5) rotate(360deg);
+    }
 
     aside{
         height: 100%;
+        width: 250px;
     }

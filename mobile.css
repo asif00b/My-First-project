@@ -104,26 +104,115 @@ main{
     float: left;
     height: 250px;
     width: 200px;
+    object-fit: cover;
     padding: 5px 10px 5px 0px;
     transition: 1s;
+
 }
 .content img:hover{
     transform: scale(.8) rotate(-360deg) translate(45px,60px);
 }
+#masking{
+    display: none;
+}
 aside{
     grid-area: a1;
-    background-color: rgb(107, 107, 121);
-    text-align: justify;
-    padding: 10px;
-    color: aquamarine;
-    
+    background-color: rgb(78, 78, 78);
+   padding: 20px;
 }
+
 aside h2{
-    font-size: 40px;
     color: white;
     text-align: center;
-    margin-bottom: 20px;
 }
+.skills li{
+    list-style-type: none;
+    font-weight: bolder;
+    margin: 50px 0;
+    text-transform: uppercase;
+    position: relative;
+}
+.skills li::before{
+    content: '';
+    position: absolute;
+
+    background-color: rgb(170,167,173);
+    width: 100%;
+    height: 25px;
+    top: calc(100% + 5px) ;
+    left: 0;
+    border-radius: 1000px;
+}
+.skills li::after{
+    content: '';
+    position: absolute;
+
+    
+    width: 0%;
+    height: 25px;
+    top: calc(100% + 5px) ;
+    left: 0;
+    border-radius: 1000px;
+
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    
+    animation-fill-mode: forwards;
+}
+
+.skills li.html::after{
+    animation-name: html;
+    
+}
+@keyframes html{
+    to{
+        width: 85%;
+        background-color: rgb(0, 38, 255);
+    }
+}
+.skills li.css::after{
+    animation-name: css;
+    
+}
+@keyframes css{
+    to{
+        width: 70%;
+        background-color: rgb(255, 81, 0);
+    }
+}
+.skills li.js::after{
+    animation-name: js;
+    
+}
+@keyframes js{
+    to{
+        width: 45%;
+        background-color: rgb(255, 251, 0);
+    }
+}
+.skills li.bootstrap::after{
+    animation-name: bootstrap;
+    
+}
+@keyframes bootstrap{
+    to{
+        width: 55%;
+        background-color: rgb(0, 255, 13);
+    }
+}
+.skills li.java::after{
+    animation-name: java;
+    
+}
+@keyframes java{
+    to{
+        width: 35%;
+        background-color: rgb(255, 0, 212);
+    }
+}
+
+
 footer{
     
     padding: 10px;
