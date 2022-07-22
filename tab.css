@@ -1,6 +1,8 @@
 header{
     grid-template-areas: 'h1 i i n  ';
 }
+
+
 header img{
     display: block; 
     position: relative;
@@ -10,19 +12,30 @@ header img{
 
 }
 @keyframes img-anim{
-0%{
-    top:0;
-    left: 150px;
-}
-50%{
-    top: 0;
-    left:0;
-}
+    0%{
+        top:0;
+        left: 120px;
+    }
+    50%{
+        top: 0;
+        left:0;
+    }
 
 
-100%{
-    top:0;
-    left:150px;
+    100%{
+        top:0;
+        left:120px;
+    }
+}
+.nav-menu{
+        
+    text-align: right;
+    margin: 25px 10px;
+    
 }
 
+.nav-menu a{
+    font-size: 20px;
+    
+ 
 }

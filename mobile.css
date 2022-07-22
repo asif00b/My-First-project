@@ -19,6 +19,7 @@ header{
     grid-template-areas:'h1 n n n n ' ;
     padding: 15px 5px ;
 }
+
 header img{
     grid-area: i;
     height: 70px;
@@ -58,7 +59,7 @@ header h1{
     text-decoration: none;
     font-weight: bold;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     margin: 5px 2px;
     
     
