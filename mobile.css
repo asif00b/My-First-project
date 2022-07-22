@@ -108,7 +108,7 @@ main{
     transition: 1s;
 }
 .content img:hover{
-    transform: scale(1.5) rotate(-360deg) translate(45px,60px);
+    transform: scale(1) rotate(-360deg) translate(45px,60px);
 }
 aside{
     grid-area: a1;
