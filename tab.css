@@ -1,0 +1,28 @@
+header{
+    grid-template-areas: 'h1 i i n  ';
+}
+header img{
+    display: block; 
+    position: relative;
+    animation: img-anim;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;      
+
+}
+@keyframes img-anim{
+0%{
+    top:0;
+    left: 150px;
+}
+50%{
+    top: 0;
+    left:0;
+}
+
+
+100%{
+    top:0;
+    left:150px;
+}
+
+}
